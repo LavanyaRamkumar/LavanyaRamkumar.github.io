@@ -278,6 +278,7 @@ article.active {
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
+  margin: 40px 0;
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
@@ -567,17 +568,16 @@ main {
 .testimonials-title { margin-bottom: 20px; }
 
 .testimonials-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: block;
+  /* justify-content: flex-start;
+  align-items: flex-start; */
   gap: 15px;
-  margin: 0 -15px;
   padding: 25px 15px;
   padding-bottom: 35px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  /* overflow-x: block; */
+  /* scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory; */
 }
 
 .testimonials-item {
@@ -874,7 +874,7 @@ main {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #Projects
 \*-----------------------------------*/
 
 .filter-list { display: none; }
@@ -1246,7 +1246,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #Projects, BLOG 
    */
 
   .project-img,
@@ -1505,7 +1505,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG
+   * #Projects, BLOG
    */
 
   .project-img, .blog-banner-box { border-radius: 16px; }
@@ -1598,7 +1598,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * PORTFOLIO
+   * Projects
    */
 
   .article-title { padding-bottom: 20px; }
@@ -1624,7 +1624,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* projects and blog grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
@@ -1743,7 +1743,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * PORTFOLIO
+   * Projects
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
@@ -1795,7 +1795,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article { width: auto; }
-
+  .sidebar { margin-left: -60px;}
   article { min-height: 100%; }
 
 
@@ -1832,8 +1832,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 100%;
     margin-bottom: 0;
     padding-top: 60px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 600px;
     z-index: 1;
   }
 
