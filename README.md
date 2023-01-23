@@ -1,1 +1,3 @@
-# LavanyaRamkumar.github.io
+# Personal website.
+
+private use only
