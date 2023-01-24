@@ -600,12 +600,25 @@ main {
 
 .testimonials-avatar-box {
   position: absolute;
-  top: 50px;
+  top: 64px;
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
+}
+.testimonials-avatar-box-bosch-img {
+  height: 60px;
+  width: 60px;
+};
+.testimonials-avatar-box-bosch {
+  top: 50px;
+  margin-top: 20px;
+}
+
+.testimonials-avatar-box-microsoft {
+  top: 45px;
+  margin-top: 15px;
 }
 
 .testimonials-item-title { margin-bottom: 7px; }
@@ -1255,13 +1268,62 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 350px) {
 
   /**
    * client
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
+
+  .testimonial-year {
+    margin-left: 95px;
+    margin-top: 10px;
+    color: var(--white-1);
+    font-size: small;
+  }
+  .testimonials-item-title {
+    margin-top: -50px;
+    margin-bottom: 7px;
+    margin-left: 30%;
+    padding-top: 10px;
+  }
+
+  .testimonials-job-title {
+    margin-top:-10px;
+    margin-bottom: 7px;
+    margin-left: 30%;
+    padding-top: 10px;
+  }
+  .testimonials-list {
+    padding-top: 0px;
+  }
+  .testimonials-avatar-box-dps{
+    margin-top: -20px;
+  }
+
+  .testimonials-avatar-box-pes{
+    margin-top: -15px;
+  }
+
+  .testimonials-avatar-box-uiuc{
+    margin-top: -15px;
+  }
+
+  .testimonials-avatar-box-microsoft {
+    margin-top:10px;
+  }
+
+  .testimonials-avatar-box-bosch {
+    margin-top: -20px;
+    margin-left: 0px;
+    height: 60px;
+    width: 60px;
+  }
+  .testimonials-avatar-box-bosch-img {
+    height: 60px;
+    width: 60px;
+  };
 
 
 
@@ -1485,6 +1547,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
   }
 
+  .testimonial-year {
+    margin-left: 95px;
+    margin-top: -10px;
+    color: var(--white-1);
+    font-size: small;
+  }
   .modal-avatar-box img { width: 65px; }
 
   .modal-img-wrapper > img {
@@ -1614,6 +1682,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .modal-avatar-box img { width: 80px; }
+  
+  .testimonial-year {
+    margin-left: 95px;
+    margin-top: -10px;
+    color: var(--white-1);
+    font-size: small;
+  }
 
 
 
@@ -1755,6 +1830,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* testimonials */
 
   .testimonials-item { min-width: calc(50% - 15px); }
+  .testimonial-year {
+    margin-left: 95px;
+    margin-top: -10px;
+    color: var(--white-1);
+    font-size: small;
+  }
 
   /* clients */
 
@@ -1920,6 +2001,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: -10px;
     padding-top: 0px;
   }
+  .testimonials-avatar-box-bosch-img {
+    height: 80px;
+    width: 80px;
+  };
+  .testimonials-avatar-box {
+    height: 80px;
+    width: 80px;
+  }
+  .testimonials-avatar-box-bosch {
+    height: 80px;
+    width: 80px;
+    margin-top: 0px;
+  }
 
 
   /**
@@ -1927,5 +2021,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+  .testimonials-avatar-box-dps{
+    margin-top: 0px;
+  }
+  
+  .testimonials-avatar-box-pes{
+    margin-top: 0px;
+  }
+  
+  .testimonials-avatar-box-uiuc{
+    margin-top: 0px;
+  }
 
 }
