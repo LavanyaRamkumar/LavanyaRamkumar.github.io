@@ -50,8 +50,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    #0077B6, 
+    #023E8A
   );
 
   /* solid */
@@ -63,12 +63,13 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: hsl(225, 100%, 70%);
+  --vegas-gold: hsl(239, 100%, 71%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-
+  --list-blue : #0096C7;
+  --skill-fill-blue: #0077B6;
   /**
    * typography
    */
@@ -279,6 +280,18 @@ article.active {
   padding-top: 45px;
   border-radius: 14px;
   margin: 40px 0;
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.content-card-skills {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 15px;
+  padding-top: 45px;
+  border-radius: 14px;
+  margin-top: 10px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
@@ -566,7 +579,7 @@ main {
 .testimonials { margin-bottom: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
-
+.testimonial-year { margin-left: 0;}
 .testimonials-list {
   display: block;
   /* justify-content: flex-start;
@@ -587,7 +600,7 @@ main {
 
 .testimonials-avatar-box {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
@@ -792,15 +805,16 @@ main {
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
 .timeline-item-title {
-  font-size: var(--fs-6);
+  font-size: var(--fs-4);
   line-height: 1.3;
   margin-bottom: 7px;
 }
 
-.timeline-list span {
-  color: var(--vegas-gold);
-  font-weight: var(--fw-400);
+.timeline-list-span {
+  color: var(--white-1);
+  /* font-weight: var(--fw-200); */
   line-height: 1.6;
+  font-size: var(--fs-7);
 }
 
 .timeline-item:not(:last-child)::before {
@@ -820,15 +834,16 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--list-blue);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
 
 .timeline-text {
   color: var(--light-gray);
-  font-weight: var(--fw-300);
+  /* font-weight: var(--fw-600); */
   line-height: 1.6;
+  font-size: var(--fs-8);
 }
 
 
@@ -836,7 +851,12 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { margin-bottom: 0px; }
+
+.skills-subtitle { 
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
 
 .skills-list { padding: 20px; }
 
@@ -864,7 +884,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--skill-fill-blue);
   height: 100%;
   border-radius: inherit;
 }
@@ -1410,13 +1430,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials */
 
-  .testimonials-title { margin-bottom: 25px; }
+  .testimonials-title { margin-bottom: 0px; }
 
   .testimonials-list {
     gap: 30px;
     margin: 0 -30px;
     padding: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 0px;
   }
 
   .content-card {
@@ -1797,6 +1817,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar, article { width: auto; }
   .sidebar { margin-left: -60px;}
   article { min-height: 100%; }
+  .testimonials-title {top: 55px;}
 
 
 
@@ -1819,6 +1840,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
+.about {padding-bottom: 0px;}
 
 
   /**
@@ -1876,6 +1898,28 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
+  .testimonial-year {
+    margin-left: 95px;
+    margin-top: -10px;
+    color: var(--white-1);
+    font-size: small;
+  }
+
+  .testimonials-job-title {
+
+  }
+  .testimonials-item-title {
+    margin-bottom: 10px;
+    margin-left: 95px;
+    margin-top: -5px;
+  }
+  .testimonials-title {
+    padding: 0;
+  }
+  .testimonials-list {
+    margin-top: -10px;
+    padding-top: 0px;
+  }
 
 
   /**
